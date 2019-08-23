@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubComponent implements OnInit {
 
+  searchUserName(username){
+  
+  }
   constructor() { }
 
   ngOnInit() {
