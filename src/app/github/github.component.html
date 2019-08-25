@@ -1,1 +1,33 @@
+<div>
 <app-search (emitUserName)="searchUserName($event)"></app-search>
+<div class="row" *ngFor = "let user of users">
+    <div class="col-md-7">
+        <div class="card">
+            <div class="card-body">
+                <div class="container contents">
+                    <div>
+                        <img src="{{user.avatar_url}}" class="card-img rounded-circle ">
+                    </div>
+                </div>
+                <div class="card profile">
+                    <div class="card-header">
+                        <h1 class="text-info" style="padding:20px">{{user.login}}</h1>
+                        <p><strong>Name:</strong>  {{user.name}}</p>
+                        <p><strong>Repos:</strong>  {{user.public_repos}}</p>
+                        <p><strong>Located at:</strong>  {{user.location}}</p>
+                        <p><strong>Created at:</strong>  {{user.created_at|date}}</p>
+                        <p><strong>Followed by:</strong>  {{user.followers}}</p>
+                        <p><strong>Following:</strong>{{user.following}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+        <p></p>
+    </div>
+    <div class="col-md-5">
+     
+    </div>
+</div>
+</div>
