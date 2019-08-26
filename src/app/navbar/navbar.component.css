@@ -1,0 +1,15 @@
+img{
+    height: 9%;
+    width: 8%;
+  
+}
+.container{
+    background-color: #6f2232;
+}
+nav{
+
+    background-color: #6f2232;
+}
+li{
+    list-style: none;
+}

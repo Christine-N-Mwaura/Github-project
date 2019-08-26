@@ -22,6 +22,7 @@ export class GithubComponent implements OnInit {
   constructor(public httpServiceService:HttpServiceService) { }
 
   ngOnInit() {
+    this.searchUserName('Christine-N-Mwaura');
   }
 
 }
