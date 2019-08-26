@@ -27,7 +27,7 @@ export class HttpServiceService {
       public_repos: any
     }
     
-    let searchEndpoint = "https://api.github.com/users/"+username+"?access_token="+environment.GithubKey;
+    let searchEndpoint = "https://api.github.com/users/"+username+"?access_token="+"be2a54404e75c5f1646554112376bf6962f487f5";
     let promise = new Promise((resolve,reject)=>{
       this.users = [];
       this.http.get<ApiResponse>(searchEndpoint).toPromise().then(
