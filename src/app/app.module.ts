@@ -11,6 +11,8 @@ import { SearchComponent } from './search/search.component';
 import { ReposComponent } from './repos/repos.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { from } from 'rxjs';
+import { DatePipe } from './date.pipe';
+import { ChangeColorDirective } from './change-color.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { from } from 'rxjs';
     NavbarComponent,
     SearchComponent,
     ReposComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DatePipe,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,

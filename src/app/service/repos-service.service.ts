@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ReposServiceService {
 _URL = 'https://api.github.com/users/';
-token = '?access_token=' + "be2a54404e75c5f1646554112376bf6962f487f5";
+token = '?access_token=' + environment.GithubKey;
   constructor(public http: HttpClient ) { 
 
   }
